@@ -108,10 +108,12 @@ class FirebaseConnection {
 
                     var simpleSneaker = SimpleSneaker()
 
+                    simpleSneaker.id = snapshot.key.toString()
+
                     // Get each field of a SimpleSneaker item
                     snapshot.children.forEach {
                         when(it.key){
-                            "id" -> simpleSneaker.id = it.value?.toString() ?: ""
+                            //"id" -> simpleSneaker.id = it.value?.toString() ?: ""
                             "name" -> simpleSneaker.name = it.value?.toString() ?: ""
                             "price" -> simpleSneaker.price = it.value?.toString()?.toFloatOrNull() ?: 0F
                             "discount" -> simpleSneaker.discount = it.value?.toString()?.toIntOrNull() ?: 0
@@ -183,11 +185,13 @@ class FirebaseConnection {
 
                         val simpleSneaker = SimpleSneaker()
 
+                        simpleSneaker.id = snapshot.key.toString()
+
                         // Get each field of a SimpleSneaker item
                         snapshot.children.forEach {
 
                             when(it.key){
-                                "id" -> simpleSneaker.id = it.value?.toString() ?: ""
+                                //"id" -> simpleSneaker.id = it.value?.toString() ?: ""
                                 "name" -> simpleSneaker.name = it.value?.toString() ?: ""
                                 "price" -> simpleSneaker.price = it.value?.toString()?.toFloatOrNull() ?: 0F
                                 "discount" -> simpleSneaker.discount = it.value?.toString()?.toIntOrNull() ?: 0
