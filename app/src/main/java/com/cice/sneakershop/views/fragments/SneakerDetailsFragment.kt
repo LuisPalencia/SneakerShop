@@ -23,6 +23,7 @@ import com.cice.sneakershop.viewmodels.MainViewModel
 import com.cice.sneakershop.views.interfaces.SupportFragmentManager
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.snackbar.Snackbar
+import com.squareup.picasso.Picasso
 
 
 class SneakerDetailsFragment : Fragment() {
@@ -121,7 +122,14 @@ class SneakerDetailsFragment : Fragment() {
     //Method that set up the activity layout with all the product info
     private fun showProductInfo(sneaker: Sneaker) {
         //Set up the image
+        /*
         Glide.with(this.requireContext())
+            .load(sneaker.mainImageURL)
+            .into(binding.imgProduct)
+
+         */
+
+        Picasso.get()
             .load(sneaker.mainImageURL)
             .into(binding.imgProduct)
 
