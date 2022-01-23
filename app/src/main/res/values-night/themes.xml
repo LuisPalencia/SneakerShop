@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--<style name="Theme.SneakerShop" parent="Theme.AppCompat.NoActionBar">-->
+    <style name="Theme.SneakerShop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_light</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red_light</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="colorOnRipple">@color/white</item>
+        <item name="colorTextView">@color/grease_edit_text_night</item>
+        <item name="colorBackgroundTransparent">@color/black_light</item>
+        <item name="colorSeparator">@color/white</item>
+        <item name="colorProfileImage">@color/white</item>
+
+        <!-- Colors Bottom Navigation View -->
+        <item name="color_bnv_background">@color/night_color_bnv</item>
+        <item name="color_bnv_checked">@color/night_color_bnv_checked</item>
+        <item name="color_bnv_not_checked">@color/night_color_bnv_not_checked</item>
+
+
+    </style>
+
+
+</resources>

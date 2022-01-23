@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--<style name="Theme.SneakerShop" parent="Theme.AppCompat.NoActionBar">-->
+    <style name="Theme.SneakerShop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="colorOnRipple">@color/grease</item>
+        <item name="colorTextView">@color/grease_edit_text</item>
+        <item name="colorBackgroundTransparent">@color/white_light</item>
+        <item name="colorSeparator">@color/black</item>
+        <item name="colorProfileImage">@color/grease</item>
+
+        <!-- Colors Bottom Navigation View -->
+        <item name="color_bnv_background">@color/day_color_bnv</item>
+        <item name="color_bnv_checked">@color/day_color_bnv_checked</item>
+        <item name="color_bnv_not_checked">@color/day_color_bnv_not_checked</item>
+
+
+
+
+
+    </style>
+
+
+
+
+</resources>

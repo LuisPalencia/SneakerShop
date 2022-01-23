@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">SneakerShop</string>
+    <string name="start">Start</string>
+    <string name="email">Email</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="error_internet_title">Error: Internet</string>
+    <string name="error_internet_content">The device is not connected to internet. You need an internet connection in order to use the app</string>
+
+
+    <!-- Login -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_button">Log in</string>
+    <string name="create_account">Create a new account</string>
+    <string name="forgot_password">I have forgotten my password</string>
+    <string name="sign_in_google">Sign in with google</string>
+    <string name="username_empty">Empty username field</string>
+    <string name="password_empty">Empty password field</string>
+    <string name="wrong_credentials">Incorrect username or password</string>
+    <string name="empty_credentials">All login fields must be filled correctly</string>
+    <string name="error_login">There was an error when trying to log in</string>
+    <string name="error_email_verified">You must confirm the email first</string>
+    <string name="error_login_google">There was an error when trying to log in via Google</string>
+    <string name="correct_login">Login done successfully</string>
+
+
+    <!-- Sign up -->
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="back_login">Go back to login</string>
+    <string name="error_create_account">There was an error when trying to create the account</string>
+    <string name="different_passwords">Passwords are different</string>
+    <string name="incorrect_email">The email is not correct</string>
+    <string name="incorrect_name">You must introduce a name</string>
+    <string name="incorrect_password">The password must contain: 1 number, 1 lowercase, 1 uppercase and a minimun length of 6 characters</string>
+    <string name="error_in_data_account">There are some errors in the data introduced. Please fix them</string>
+    <string name="success_account_creation">Verification email has been sent. Please check your mailbox and confirm the account</string>
+    <string name="create_your_account">Create your account</string>
+
+    <!-- Recover password -->
+    <string name="send_email">Send email</string>
+    <string name="success_email_recover_password">Email has been sent. Plase check your mailbox</string>
+    <string name="error_email_recover_password">An error ocurred when trying to send the email</string>
+    <string name="error_not_existing_email">The email specified doesn\'t exist</string>
+    <string name="recover_your_password">Recover your password</string>
+
+    <!-- Main activity -->
+    <string name="sneakers">Sneakers</string>
+    <string name="favourites">Favourites</string>
+    <string name="basket">Basket</string>
+    <string name="profile">Profile</string>
+    <string name="try_again">Try again</string>
+
+    <!-- Shop fragment -->
+    <string name="items_showed">items showed</string>
+    <string name="euro_character">€</string>
+
+    <!-- Favourite fragment -->
+    <string name="number_favourite_items">Number of favourite items:</string>
+    <string name="no_favourite_items">You don\'t have any favourite items!</string>
+    <string name="favourite_item_removed">Product removed from the favourites list</string>
+
+    <!-- Basket fragment -->
+    <string name="shipping_costs">Shipping costs</string>
+    <string name="total_price">Total price</string>
+    <string name="price_example">0,00 €</string>
+    <string name="complete_order">Complete order</string>
+    <string name="size">Size</string>
+    <string name="quantity">Quantity</string>
+    <string name="basket_item_removed">Product removed from the basket</string>
+    <string name="error_basket_empty">You need to add products to the basket</string>
+    <string name="error_finish_order">An error ocurred when trying to finish the order. Please check your internet connection and try it again</string>
+    <string name="shipping_costs_info">Free shipping costs in orders over</string>
+    <string name="confirm_order_title">Confirm order</string>
+    <string name="confirm_order_message">Are you sure you want to confirm the order?</string>
+    <string name="order_completed">Order completed successfully</string>
+    <string name="go_to_shop">Go to shop</string>
+    <string name="no_basket_items">You don\'t currently have any item in your basket</string>
+
+
+    <!-- Profile fragment -->
+    <string name="hello">Hello,</string>
+    <string name="my_orders">My orders</string>
+    <string name="account_details">Account details</string>
+    <string name="log_off">Log off</string>
+    <string name="contact">Contact</string>
+
+    <!-- Product details -->
+    <string name="add_to_basket">Add to basket</string>
+    <string name="choose_size">Choose size</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="error_select_size">You must select first the size</string>
+    <string name="error_item_already_in_basket">This item with the selected size is already in the basket</string>
+    <string name="item_added_to_basket">Product added to basket</string>
+    <string name="error_get_product">An error ocurred when trying to get the product info</string>
+
+    <!-- Contact fragment -->
+    <string name="telephone_number">Number: 123456789</string>
+    <string name="postal_number">Postal code: 13300</string>
+    <string name="city">City: Valdepenas</string>
+
+    <!-- Orders list -->
+    <string name="order_id">Order ID</string>
+    <string name="items">Items</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="go_back">Go back</string>
+    <string name="no_orders">You have not ordered in the past, place your first order!</string>
+    <string name="order_selected">Order selected:</string>
+
+
+    <!-- Example strings -->
+    <string name="example_brand">Jordan</string>
+    <string name="example_name_product">Nike Jordan Air Mid Chicago</string>
+    <string name="example_price">99,95€</string>
+    <string name="example_reduced_price">79,95€</string>
+    <string name="example_rate">4.8/5</string>
+    <string name="example_date">20/12/2021</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

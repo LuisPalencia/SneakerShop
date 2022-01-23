@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Other values-->
+    <attr name="colorOnRipple" format="reference" />
+    <attr name="colorTextView" format="reference" />
+    <attr name="colorBackgroundTransparent" format="reference" />
+    <attr name="colorSeparator" format="reference" />
+    <attr name="colorProfileImage" format="reference" />
+
+    <attr name="color_bnv_background" format="reference" />
+    <attr name="color_bnv_checked" format="reference" />
+    <attr name="color_bnv_not_checked" format="reference" />
+</resources>

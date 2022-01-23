@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket"
+    app:startDestination="@id/basketFragment">
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.cice.sneakershop.views.fragments.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basket_to_sneakerDetails"
+            app:destination="@id/sneaker_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+    </fragment>
+
+    <include app:graph="@navigation/sneaker_details" />
+</navigation>
