@@ -10,6 +10,9 @@ import com.google.firebase.ktx.Firebase
 object Storage {
     val database = Firebase.database(Constants.DB_URL)
 
+    // This var is in order to control if the data has been downloaded from the DB
+    var isDataAvailable = false
+
     //User logged
     lateinit var user: User
 

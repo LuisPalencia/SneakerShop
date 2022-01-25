@@ -23,6 +23,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.cice.sneakershop.R
+import com.cice.sneakershop.Storage
 import com.cice.sneakershop.constants.Constants
 import com.cice.sneakershop.databinding.ActivityMainBinding
 import com.cice.sneakershop.models.User
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity(), SupportFragmentManager {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        
         //This extra indicates if user logged manually in the previous activity
         val loginPreviousActivity = intent.getBooleanExtra(Constants.LOGGED_BEFORE_MAIN_ACTIVITY, false)
 
@@ -102,10 +103,15 @@ class MainActivity : AppCompatActivity(), SupportFragmentManager {
     private fun initializeMainActivity(){
         firebaseAuth = FirebaseAuth.getInstance()
 
-        //Set the user observer
-        setInitialObserverUser()
-        //Get the initial data
-        getInitialData()
+        if(!Storage.isDataAvailable){
+            //Set the user observer
+            setInitialObserverUser()
+            //Get the initial data
+            getInitialData()
+            // Now data is available, so set the Storage variable
+            Storage.isDataAvailable = true
+        }
+
 
         //Set the correct visibility of the layouts
         binding.layoutShop.visibility = View.VISIBLE
