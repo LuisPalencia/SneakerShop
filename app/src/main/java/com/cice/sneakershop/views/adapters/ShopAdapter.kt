@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.cice.sneakershop.R
 import com.cice.sneakershop.models.SimpleSneaker
 import com.cice.sneakershop.utils.GenericFunctions
+import com.squareup.picasso.Picasso
 
 class ShopAdapter(
     private val context: Context): RecyclerView.Adapter<ShopAdapter.ViewHolder>() {
@@ -79,9 +80,18 @@ class ShopAdapter(
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         // Set the image
+
         Glide.with(context)
             .load(data[position].smallImageURL)
+            .placeholder(R.drawable.ic_image_not_loaded)
             .into(viewHolder.imgProduct)
+
+        /*
+        Picasso.get()
+            .load(data[position].smallImageURL)
+            .placeholder(R.drawable.ic_image_not_loaded)
+            .into(viewHolder.imgProduct)
+        */
 
         // Set the textfields info
         viewHolder.txtBrand.text = data[position].brand

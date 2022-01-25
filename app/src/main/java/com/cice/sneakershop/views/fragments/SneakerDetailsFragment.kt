@@ -131,6 +131,7 @@ class SneakerDetailsFragment : Fragment() {
 
         Picasso.get()
             .load(sneaker.mainImageURL)
+            .placeholder(R.drawable.ic_image_not_loaded)
             .into(binding.imgProduct)
 
         // Sets the toolbar title

@@ -25,8 +25,9 @@
         <ImageView
             android:id="@+id/imgProduct"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="180dp"
             android:scaleType="fitCenter"
+            android:background="@color/white"
             app:layout_constraintTop_toTopOf="parent"
 
             />

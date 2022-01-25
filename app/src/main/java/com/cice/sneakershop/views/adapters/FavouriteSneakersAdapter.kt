@@ -2,6 +2,7 @@ package com.cice.sneakershop.views.adapters
 
 import android.content.Context
 import android.graphics.Paint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,7 +22,7 @@ class FavouriteSneakersAdapter(
     private val mainViewModel: MainViewModel
 ): RecyclerView.Adapter<FavouriteSneakersAdapter.ViewHolder>() {
 
-    private var TAG = "ShopAdapter"
+    private var TAG = "FavouriteSneakersAdapter"
     private lateinit var mListener : OnItemClickListener
     private var data = mutableListOf<FavouriteProduct>()
 
@@ -89,6 +90,7 @@ class FavouriteSneakersAdapter(
             // Set the image
             Glide.with(context)
                 .load(simpleSneaker.smallImageURL)
+                .placeholder(R.drawable.ic_image_not_loaded)
                 .into(viewHolder.imgProduct)
 
             // Set the textfields info
@@ -127,6 +129,8 @@ class FavouriteSneakersAdapter(
                 // Set the TextView for the percentage discount gone
                 viewHolder.txtDiscountPercentage.visibility = View.GONE
             }
+
+            Log.d(TAG, simpleSneaker.isFavourite.toString())
 
             // Set the color of the favourite icon depending if the sneaker is favourite or not
             viewHolder.imgFavouriteIcon.setColorFilter(

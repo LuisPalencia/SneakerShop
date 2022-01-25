@@ -83,6 +83,7 @@ class OrdersAdapter(
         if(urlImage != null){
             Glide.with(context)
                 .load(urlImage)
+                .placeholder(R.drawable.ic_image_not_loaded)
                 .into(viewHolder.imgProduct)
         }
 

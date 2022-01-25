@@ -8,6 +8,7 @@
         android:id="@+id/imgProduct"
         android:layout_width="130dp"
         android:layout_height="0dp"
+        android:layout_marginStart="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,19 +87,19 @@
     <TextView
         android:id="@+id/txtDiscountPercentage"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/red_google"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="14sp"
         android:visibility="invisible"
+        android:layout_marginStart="4dp"
         android:paddingStart="6dp"
         android:paddingEnd="6dp"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/imgFavouriteIcon"
-        app:layout_constraintBottom_toBottomOf="@id/imgFavouriteIcon"
         />
 
     <View

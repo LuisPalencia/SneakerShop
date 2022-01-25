@@ -85,6 +85,7 @@ class BasketAdapter(
             // Set the image
             Glide.with(context)
                 .load(simpleSneaker.smallImageURL)
+                .placeholder(R.drawable.ic_image_not_loaded)
                 .into(viewHolder.imgProduct)
 
             // Set the textfields info
