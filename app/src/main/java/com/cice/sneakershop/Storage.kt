@@ -26,5 +26,12 @@ object Storage {
     //Orders
     var orders: MutableList<Order> = mutableListOf()
 
+    fun clearData(){
+        isDataAvailable = false
+        user = User()
+        simpleSneakers = mutableListOf()
+        orders = mutableListOf()
+    }
+
 
 }

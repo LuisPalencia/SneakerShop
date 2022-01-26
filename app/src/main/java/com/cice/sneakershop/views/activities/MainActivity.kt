@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), SupportFragmentManager {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
+
         //This extra indicates if user logged manually in the previous activity
         val loginPreviousActivity = intent.getBooleanExtra(Constants.LOGGED_BEFORE_MAIN_ACTIVITY, false)
 
@@ -174,6 +174,9 @@ class MainActivity : AppCompatActivity(), SupportFragmentManager {
     override fun signOutUser() {
         //Sign out user from Firebase
         firebaseAuth.signOut()
+
+        // If there is a new log in, it needs to download again the data
+        Storage.clearData()
         //Open login activity
         val intent = Intent(this, LoginActivity::class.java)
         // Flags in order to remove from the stack this activity
