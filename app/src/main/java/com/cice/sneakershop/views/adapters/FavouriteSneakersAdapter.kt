@@ -2,7 +2,6 @@ package com.cice.sneakershop.views.adapters
 
 import android.content.Context
 import android.graphics.Paint
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.cice.sneakershop.R
 import com.cice.sneakershop.models.FavouriteProduct
-import com.cice.sneakershop.models.SimpleSneaker
 import com.cice.sneakershop.utils.GenericFunctions
 import com.cice.sneakershop.viewmodels.MainViewModel
 
@@ -129,8 +127,6 @@ class FavouriteSneakersAdapter(
                 // Set the TextView for the percentage discount gone
                 viewHolder.txtDiscountPercentage.visibility = View.GONE
             }
-
-            Log.d(TAG, simpleSneaker.isFavourite.toString())
 
             // Set the color of the favourite icon depending if the sneaker is favourite or not
             viewHolder.imgFavouriteIcon.setColorFilter(

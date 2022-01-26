@@ -176,7 +176,7 @@ class FirebaseConnection {
 
                 if(task.isSuccessful){
                     val result = task.result
-                    Log.d(TAG, "Result: ${result.toString()}")
+                    //Log.d(TAG, "Result: ${result.toString()}")
 
                     // Get each SimpleSneaker
                     result?.children?.forEach { snapshot ->
@@ -475,7 +475,6 @@ class FirebaseConnection {
 
             favouriteProductsRef.addChildEventListener(object : ChildEventListener {
                 override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
-                    Log.d(TAG, "ADDED FAVOURITE")
                     if(snapshot.key != null){
 
                         val idFavouriteSneaker = snapshot.value?.toString() ?: ""
@@ -510,18 +509,15 @@ class FirebaseConnection {
 
                 override fun onChildRemoved(snapshot: DataSnapshot) {
                     if(snapshot.key != null){
-                        Log.d(TAG, "REMOVED FAVOURITE")
                         val idFavouriteSneaker = snapshot.value?.toString() ?: ""
 
                         if(idFavouriteSneaker.isNotEmpty()){
-                            Log.d(TAG, "$idFavouriteSneaker")
                             //Check if basket item is already added in the storage list
                             val iterator = Storage.user.favouriteProducts.iterator()
 
                             while(iterator.hasNext()){
                                 val favouriteProduct = iterator.next()
                                 if(favouriteProduct.id == idFavouriteSneaker){
-                                    Log.d(TAG, "Removing product from favourites")
                                     Storage.user.favouriteProducts.remove(favouriteProduct)
                                     favouriteSneakers.postValue(Storage.user.favouriteProducts)
                                     liveDataSimpleSneakers.postValue(Storage.simpleSneakers)
